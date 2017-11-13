@@ -119,20 +119,26 @@ nav {
 }
 
 .tablero-name {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 }
 
 .bh-btn {
 	cursor: default;
- 	font-size: 14px;
  	height: 30px;
  	line-height: 30px;
+	font-weight: 700;
  	margin: 0 4px 0 0;
  	overflow: hidden;
  	position: relative;
  	text-decoration: none;
 	display: inline-block;
+	border-radius: 3px;
+	padding: 0 15px;
+}
+
+.bh-btn:hover {
+	background: #755286;
 }
 
 .icon {
@@ -142,6 +148,15 @@ nav {
 	line-height: 30px;
 	display: inline-block;
 	position: relative;
+	vertical-align: bottom;
+}
+
+.divider {
+	opacity: 0.3;
+}
+
+.menu-corner {
+	float: right;
 }
 
 #board {
@@ -153,7 +168,7 @@ nav {
 	margin-bottom: 10px; 
 }
 
-.list-container {
+#list-container {
 	height: auto;
 	width: 270px;
 	color: #E1DBE4;
@@ -165,14 +180,10 @@ nav {
 	text-align: center;
 }
 
-.list-container::selection {
-	background: 0 0;
-}
-
-.add-list {
-	height: 32px;
+#add-list {
+	height: 40px;
 	width: 262px;
-	padding: 7px;
+	padding: 10px;
 	position: relative;
 	background: #755286;
 	border-radius: 3px;
@@ -180,7 +191,7 @@ nav {
 	display: inline-block;
 }
 
-.add-list:hover {
+#add-list:hover {
 	background: #60436E;
 }
 
@@ -195,6 +206,7 @@ nav {
 	display: inline-block;
 	vertical-align: top;
 	white-space: nowrap;
+	float: left;
 }
 
 .form-add:last-child {
@@ -215,7 +227,7 @@ nav {
 }
 
 .list-control {
-	height: 2pc;
+	height: 2.5pc;
 	width: 262px;
 	overflow: hidden;
  	margin: 4px 0 0;
@@ -229,6 +241,7 @@ nav {
 	float: left;
   min-height: 30px;
   height: 30px;
+	width: 85px;
   margin-top: 0;
   border: none;
 	cursor: pointer;
@@ -239,4 +252,11 @@ nav {
 	padding: 4px 1pc;
 	text-align: center;
 	border-radius: 3px;
+	vertical-align: bottom
+}
+
+.btn-cerrar {
+	float: left;
+	vertical-align: bottom;
+	margin: 8px 4px 0 0;
 }

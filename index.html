@@ -5,7 +5,6 @@
 	<title>Trello</title>
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 	<script src="assets/js/app.js" type="application/javascript"></script>
 </head>
 <body>
@@ -30,23 +29,24 @@
 		<div class="board-header">
 			<span class="bh-btn tablero-name">Tablero de bienvenida</span>
 			<span class="icon"><i class="fa fa-star-o" aria-hidden="true"></i></span>
-			<span>|</span>
-			<span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-			<span class="bh-btn">Privado</span>
-			<span>|</span>
-			<span class="icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></span>
-			<span class="bh-btn"><a href="">Mostrar menú</a> </span>
+			<span class="icon divider">|</span>
+			<span class="bh-btn">
+				<span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+				<span>Privado</span>
+			</span>
+			<span class="icon divider">|</span>
+			<span class="bh-btn menu-corner">	
+				<span class="icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></span>
+				<span>Mostrar menú</span>
+			</span>
 		</div>
 	</header>
 	<main id="board">
-		<div name="list-container" class="list-container form-add">
-			<form class="new-list">
-				<span class="add-list">Añadir una lista...</span>
-				<input class="name-list" type="text" placeholder="Añadir una lista...">
-				<div class="list-control">
-					<button class="btn-list" type="button">Guardar</button>
-					<span class="icon"><i class="fa fa-times" aria-hidden="true"></i></span>
-				</div>
+		<div id="list-container">
+			<form id="new-list">
+				<span id="add-list">Añadir una lista...</span>
+				<!--AQUÍ VA EL FORMULARIO AÑADIR LISTA-->
+				
 			</form>
 		</div>
 	</main>
